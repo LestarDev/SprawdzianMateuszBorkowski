@@ -1,0 +1,11 @@
+<span>Liczba 1</span><input type="number" [(ngModel)]="value1" (change)="oblicz()"/><br>
+<span>Liczba 2</span><input type="number" [(ngModel)]="value2" (change)="oblicz()"><br>
+<span>Operacja +-/*</span><input maxlength="1" [(ngModel)]="op" (change)="oblicz()"><br>
+<p *ngIf="op=='/' && value2==0">Nie dziel przez 0!</p>
+<span>Wynik: {{wynik}}</span>
+<p>
+    Pies <br />
+    Imie: {{pies.imie}} <br />
+    Rasa: {{pies.rasa}} <br />
+    Wiek: {{pies.wiek}}
+</p>
